@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orangecake</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/StephanWagner/jBox@v0.5.3/dist/jBox.all.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/gh/StephanWagner/jBox@v0.5.3/dist/jBox.all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css\orangecake.css">
+    <!-- Add icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <script>
+  const audio = new Audio();
+  audio.src = "./audio/mouseclick.mp3";
+  </script>
+  <style>
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  li {
+    display: inline;
+  }
+  </style>
+  <body>
+    <div class="header">
+      <a href="https://p2668558.github.io/Labs/Coursework%202/home.html">
+      <img class="logo" src="img\logo.png" alt="logo">
+      </a>
+    </div>
+
+    <ul class="menu">
+      <div class="content">
+      <li><a href="https://p2668558.github.io/Labs/Coursework%202/home.html" onclick="audio.play()"><i class="fa fa-home"></i></a></li>
+      <li><a href="recipes.html" onclick="audio.play()">RECIPES</a></li>
+      <li><a href="#contact" onclick="audio.play()" >CONTACT</a></li>
+      <li><a href="#about" onclick="audio.play()">ABOUT</a></li>
+    </div>
+    </ul>
+
+    <img src="img\orangecake.jpg" alt="oragecake">
+
+    <table>
+      <tr>
+        <td class="title">RECIPES</td>
+      </tr>
+    </table>
+
+<table class="container">
+<tr>
+  <td class="ingredients">
+    <h2>INGREDIENTS</h2>
+    <h4> 1 Seville orange</h4>
+    <h4>a little melted butter</h4>
+    <h4>100g plain chocolate</h4>
+    <h4>3 eggs</h4>
+    <h4>280g caster sugar</h4>
+    <h4>240ml sunflower oil</h4>
+    <h4>250g plain flour</h4>
+    <h4>1½ tsp baking powder</h4>
+    <h4>orange candied peel , to decorate</h4>
+
+  </td>
+  <td class="methods">
+    <h2>METHOD</h2>
+    <h3>Step 1</h3>
+    <h4> Pierce the orange with a skewer (right through). Cook in boiling water for 30 minutes until soft. Whizz the whole orange in a food processor until smooth; let cool. </h4>
+    <h3>Step 2</h3>
+    <h4>Preheat the oven to 180C/gas 4/fan 160C.Grease and line the base of a 23cm/9in round cake tin. Melt the chocolate in a heatproof bowl set over a pan of simmering water or in the microwave for 2 minutes on High, stirring after 1 minute. Let cool. </h4>
+    <h3>Step 3</h3>
+    <h4>In a large bowl, lightly beat the eggs, sugar and oil. Gradually beat in the puréed orange, discarding any pips, then stir in the cooled melted chocolate. Sift in the cocoa, flour and baking powder.</h4>
+    <h3>Step 4</h3>
+    <h4> Mix well and pour into the tin. Bake in the centre of the oven for 55 minutes, or until the cake springs back when lightly pressed in the middle. (Check after 45 minutes and cover with foil if it is browning too much.) Allow to cool for 10 minutes in the tin, then turn out on to a wire rack to cool completely </h4>
+    <h3>Step 5</h3>
+    <h4>Make the chocolate ganache: put the chocolate into a heatproof bowl. Bring the cream to the boil and pour over the chocolate. Leave for 2 minutes, then stir until smooth. Set aside until firm enough to spread over the cake – up to 1½ hours. </h4>
+    <h3>Step 6</h3>
+    <h4>Transfer the cake to a serving plate. Using a palette knife, swirl the ganache over the top. Decorate with strips of candied orange peel.</h4>
+  </td>
+</tr>
+</table>
+
+<div class="video">
+  <table>
+    <tr>
+      <td class="video1"><div id="myModal"><i class="fa fa-home"></i></div></td>
+    </tr>
+  </table>
+</div>
+
+<script>
+
+new jBox('Modal', {
+  width: 450,
+  height: 275,
+  attach: '#myModal',
+  title: 'Orange Chocolate Cake',
+  content: '<video width="400" controls><source src="video/orangechocolatecake.mp4" type="video/mp4"></video>'
+
+});
+
+ </script>
+
+ <footer>
+ <div class="footer-content">
+   <h3>Sam's Baking</h3>
+   <p>Hello and welcome to my baking website called Sam's Baking where I show
+ different types of cuisine/dessert that are created by me. Hope you enjoy what's to offer.</p>
+ <ul class="socials">
+   <!-- Add font awesome icons -->
+ <li><a href="https://www.facebook.com/profile.php?id=100079977155439"><i class="fa fa-facebook"></i></a></li>
+ <li><a href="https://twitter.com/Samad15067982"><i class="fa fa-twitter"></i></a></li>
+ <li><a href="https://www.youtube.com/channel/UCBKZM6h4QtDZi1VvYxKDr4w"><i class="fa fa-youtube"></i></a></li>
+ <li><a href="https://www.instagram.com/s.m.s_786/"><i class="fa fa-instagram"></i></a></li>
+ </ul>
+ </div>
+ <div class="footer-bottom">
+   <p>copyright &copy;2022, designed by Samad Miah P2668558</p>
+ </div>
+ </footer>
+
+  </body>
+</html>
