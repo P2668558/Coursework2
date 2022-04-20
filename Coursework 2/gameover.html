@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gameover</title>
+    <link href='css\gameover.css' rel='stylesheet' type='text/css'/>
+    <!-- Add icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <script>
+  const audio = new Audio();
+  audio.src = "./audio/mouseclick.mp3";
+  </script>
+  <style>
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  li {
+    display: inline;
+  }
+
+  </style>
+  <body>
+
+    <div class="header">
+      <a href="home.html">
+      <img class="logo" src="img\logo.png" alt="logo">
+      </a>
+    </div>
+
+    <ul class="menu">
+      <div class="content">
+      <li><a href="home.html" onclick="audio.play()"><i class="fa fa-home"></i></a></li>
+      <li><a href="recipes.html" onclick="audio.play()">RECIPES</a></li>
+      <li><a href="contact.html" onclick="audio.play()">CONTACT</a></li>
+      <li><a href="about.html" onclick="audio.play()">ABOUT</a></li>
+    </div>
+    </ul>
+
+    <table>
+      <tr>
+        <td class="title">QUIZ</td>
+      </tr>
+    </table>
+
+
+    <div class='gameOverScreen'>
+      <h1>Well Done!</h1>
+      <p>You scored <span id='score'></span> points!</p>
+    </div>
+
+    <script>
+
+      let finalScore = localStorage.getItem('score');
+
+      document.getElementById('score').textContent = finalScore;
+
+    </script>
+
+    <footer>
+    <div class="footer-content">
+      <h3>Sam's Baking</h3>
+      <p>Hello and welcome to my baking website called Sam's Baking where I show
+    different types of cuisine/dessert that are created by me. Hope you enjoy what's to offer.</p>
+    <ul class="socials">
+      <!-- Add font awesome icons -->
+    <li><a href="https://www.facebook.com/profile.php?id=100079977155439"><i class="fa fa-facebook"></i></a></li>
+    <li><a href="https://twitter.com/Samad15067982"><i class="fa fa-twitter"></i></a></li>
+    <li><a href="https://www.youtube.com/channel/UCBKZM6h4QtDZi1VvYxKDr4w"><i class="fa fa-youtube"></i></a></li>
+    <li><a href="https://www.instagram.com/s.m.s_786/"><i class="fa fa-instagram"></i></a></li>
+    </ul>
+    </div>
+    <div class="footer-bottom">
+      <p>copyright &copy;2022, designed by Samad Miah P2668558</p>
+    </div>
+    </footer>
+
+  </body>
+</html>
